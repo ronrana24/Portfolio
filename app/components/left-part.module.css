@@ -1,0 +1,15 @@
+.left-part {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  min-width: 50%;
+}
+
+.left-part > h1 {
+  margin: 0;
+}

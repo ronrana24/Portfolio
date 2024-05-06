@@ -1,0 +1,40 @@
+[
+  {
+    "from": "",
+    "to": "",
+    "designation": "Software Engineer",
+    "project": "hBits",
+    "company": "Chimps At Work (CAW) Studios",
+    "description": "",
+    "techStack": [
+      "Typescript",
+      "React",
+      "Next.js",
+      "AWS Lambda, SQS & S3",
+      "CI/CD",
+      "Docker",
+      "Nodejs",
+      "Express.js",
+      "API Integration"
+    ]
+  },
+  {
+    "from": "",
+    "to": "",
+    "designation": "Integration Engineer",
+    "project": "Haptik",
+    "company": "Chimps At Work (CAW) Studios",
+    "description": "",
+    "techStack": [
+      "Python",
+      "Django",
+      "MySQL",
+      "REST API",
+      "Redis",
+      "Kibana",
+      "Docker",
+      "Celery",
+      "Git & Github"
+    ]
+  }
+]
