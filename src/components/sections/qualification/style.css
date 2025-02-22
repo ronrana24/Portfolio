@@ -1,0 +1,59 @@
+/* Qualification.css */
+.section {
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #4B5563; /* Gray-600 */
+    margin-top: 0.5rem;
+}
+
+.tab-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    color: #4B5563; /* Gray-600 */
+    cursor: pointer;
+}
+
+.tab-button.active {
+    color: #3B82F6; /* Blue-500 */
+    border-bottom: 2px solid #3B82F6; /* Blue-500 */
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.experience-title {
+    font-size: 1.25rem; /* Text-xl */
+    font-weight: 600; /* Font-semibold */
+}
+
+.experience-company {
+    color: #6B7280; /* Gray-500 */
+}
+
+.experience-date {
+    color: #9CA3AF; /* Gray-400 */
+    display: flex;
+    align-items: center;
+}

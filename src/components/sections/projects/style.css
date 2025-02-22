@@ -1,0 +1,52 @@
+/* Projects.css */
+
+.projects-section {
+    padding-top: 5rem; /* py-20 */
+    padding-bottom: 5rem; /* py-20 */
+  }
+  
+  .container {
+    max-width: 1280px; /* mx-auto */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+  }
+  
+  .title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: bold; /* font-bold */
+    margin-bottom: 3rem; /* mb-12 */
+  }
+  
+  .projects-grid {
+    display: grid; /* grid */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* md:grid-cols-2 lg:grid-cols-3 */
+    gap: 2rem; /* gap-8 */
+  }
+  
+  .project-card {
+    background-color: var(--container-color);
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* shadow-lg */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 12rem; /* h-48 */
+    margin-bottom: 1rem; /* mb-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    object-fit: cover; /* object-cover */
+  }
+  
+  .project-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+    margin-bottom: 0.5rem; /* mb-2 */
+  }
+  
+  .project-description {
+    color: #4a5568; /* text-gray-600 */
+  }
+  
