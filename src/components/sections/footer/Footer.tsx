@@ -1,9 +1,9 @@
 import "./style.css";
 import useVisit from "../../common/hooks/useVisit";
-import { SOCIAL_LINKS } from "../../../assets/constant";
+import React from "react";
 
 export default function Footer() {
-  const [count, _] = useVisit();
+  const [count] = useVisit();
 
   return (
     <footer className="footer">
@@ -13,7 +13,8 @@ export default function Footer() {
         </span>
         <div className="visitor-container">
           <span className="visitor-count">
-            Number of total Visitors: <strong>{count}</strong>
+            Number of total Visitors:{" "}
+            <strong>{count as React.ReactNode}</strong>
           </span>
         </div>
       </div>
