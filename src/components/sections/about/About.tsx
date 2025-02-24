@@ -4,6 +4,7 @@ import "./style.css";
 import Info from "./Info";
 import Header from "../../common/heading/Header";
 import SubHeading from "../../common/sub-heading/SubHeading";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -11,20 +12,45 @@ const About = () => {
       <Header text="About Me" />
       <SubHeading text="My Introduction" />
 
-      <div className="about__container container grid">
-        <img src={"AboutImg"} alt="" className="about__img" />
-
+      <div className="about__container container">
         <div className="about__data">
           <Info />
 
-          <p className="about__description">
-            Frontend Developer, I create web pages with UI / UX user interface,
-            I create web pages with the skill set including HTML, CSS,
-            JavaScript, and React, I have the tools to bring any website vision
-            to life.
-          </p>
+          <motion.p
+            className="about__description"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              style={{ fontWeight: "bold", color: "#007bff" }}
+            >
+              FullStack Developer
+            </motion.span>
+            , I focus on creating high-performance solutions tailored to modern
+            technological demands.{" "}
+            <motion.span
+              whileHover={{ color: "#ff6347" }}
+              transition={{ duration: 0.3 }}
+            >
+              Skilled in system design (LLD & HLD), and problem-solving{" "}
+            </motion.span>
+            My approach combines clean architecture, optimized performance, and
+            best coding practices to deliver reliable and maintainable software.
+            Driven by innovation and continuous learning, I am committed to
+            crafting impactful digital solutions that enhance efficiency and
+            user engagement.
+          </motion.p>
 
-          <a download="" href={"CV"} className="button button--flex">
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1rx1hUkFoKJotBq3vPbL6j6Jc3wnRzRvh/view?usp=sharing"
+            className="button button--flex"
+          >
             Download CV
             <svg
               className="button__icon"

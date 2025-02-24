@@ -13,7 +13,7 @@ export default function WorkExperience() {
     activeTab === "work" ? workExperience : education;
 
   return (
-    <section id="work" className="work-experience">
+    <section id="experience" className="work-experience">
       <div className="container">
         <Header text="My Journey" className={"title"} />
 

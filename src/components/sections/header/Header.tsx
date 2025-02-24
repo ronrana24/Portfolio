@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import ThemeToggle from "../../common/toggle-button/ThemeToggle";
+import { IoAppsOutline } from "react-icons/io5";
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -43,10 +44,11 @@ const Header: React.FC = () => {
           <ul className="nav__list grid">
             {[
               "#home",
-              "#projects",
+              "#about",
               "#skills",
               "#experience",
-              "#about",
+              "#projects",
+
               "#contact",
             ].map((item) => (
               <li className="nav__item" key={item}>
@@ -80,7 +82,7 @@ const Header: React.FC = () => {
         )}
 
         <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
-          <i className="uil uil-apps"></i>
+          <IoAppsOutline />
         </div>
       </nav>
     </header>

@@ -21,7 +21,9 @@ const Home: React.FC = () => {
               </a>
             ))}
           </div>
-          <div className="home__img"></div>
+          <div className="home__img">
+            {/* <img src="https://drive.usercontent.google.com/download?id=1ONHTn3kFh6bfiMlAd0sc34_It57Lh4x9&export=view&authuser=0" /> */}
+          </div>
           <Data />
         </div>
         <ScrollDown />

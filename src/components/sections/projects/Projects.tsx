@@ -1,17 +1,9 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { Project } from "../../common/interfaces";
-import "./style.css"; // Import the custom CSS file
+import "./style.css";
+import { projects } from "../../../assets/data";
 
 // Replace the sample array with your actual data
-const projects: Project[] = [
-  {
-    id: 1,
-    image: "/path/to/image1.jpg",
-    title: "React Projects",
-    description: "Description for project one.",
-  }
-];
 
 export default function Projects() {
   return (
@@ -23,19 +15,53 @@ export default function Projects() {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <Tilt options={{ max: 15, scale: 1.05 }}>
+              <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.05}>
                 <div className="project-card">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-image"
-                  />
+                  {/* Project Image */}
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-image"
+                    />
+                  ) : null}
+
+                  {/* Project Title */}
                   <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
+                  <p>{project.description}</p>
+
+                  {/* Technology Tags */}
+                  <div className="tech-tags">
+                    {project.tags.map((tech, index) => (
+                      <span key={index} className="tech-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Links */}
+                  <div className="project-links">
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="repo-link"
+                    >
+                      GitHub Repo
+                    </a>
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="live-link"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
               </Tilt>
             </motion.div>

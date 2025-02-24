@@ -1,9 +1,7 @@
 import "./styles/App.css";
-import Footer from "./components/layout/footer/Footer";
-import Header from "./components/layout/header/Header";
-import Layout from "./components/layout/Layout";
+import Footer from "./components/sections/footer/Footer";
+import Header from "./components/sections/header/Header";
 import Contact from "./components/sections/contact/Contact";
-import Hero from "./components/sections/Hero";
 import Home from "./components/sections/home/Home";
 import Projects from "./components/sections/projects/Projects";
 import Qualification from "./components/sections/qualification/Qualification";

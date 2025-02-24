@@ -14,13 +14,6 @@ export interface Project {
   image: string;
   title: string;
   description: string;
-  // id: number;
-  //   title: string;
-  //   description: string;
-  //   image: string;
-  //   tags: string[];
-  //   demoLink: string;
-  //   codeLink: string;
 }
 
 export interface Skill {
@@ -50,5 +43,16 @@ export interface WorkExperienceInterface {
   location: string;
   startDate: string;
   endDate: string;
-  description?: string,
+  description?: string;
+}
+
+export interface ContactEmailProps {
+  senderName: string;
+  senderEmail: string;
+  senderMessage: string;
+}
+
+export interface EmailProviderProps {
+  templateId: string;
+  form: HTMLFormElement;
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp } from "react-icons/fa";
 import "./style.css";
 
 const ScrollUp: React.FC = () => {
@@ -25,7 +25,7 @@ const ScrollUp: React.FC = () => {
 
   return (
     <a href="#" className="scrollup" aria-label="Scroll to top">
-      <FaArrowUp className="uil uil-arrow-up scrollup__icon" />
+      <FaArrowUp className="scrollup__icon" />
     </a>
   );
 };

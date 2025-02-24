@@ -1,5 +1,6 @@
 import {
   Education,
+  Project,
   Skill,
   WorkExperienceInterface,
 } from "../components/common/interfaces";
@@ -27,10 +28,10 @@ import {
 export const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "A modern web application...",
-    image: "/images/project1.jpg",
-    tags: ["React", "Tailwind", "Node.js"],
+    title: "React Projects",
+    description: "A web application that contains multiple React.js projects",
+    image: "",
+    tags: ["React.js"],
     demoLink: "https://example.com",
     codeLink: "https://github.com/example",
   },
@@ -118,3 +119,13 @@ export const workExperience: WorkExperienceInterface[] = [
     endDate: "June 2022",
   },
 ];
+
+// export const projects: Project[] = [
+//   {
+//     id: 1,
+//     image:
+//       "https://cloudmatetechnologies.com/wp-content/uploads/2024/06/react.js.png",
+//     title: "React Projects",
+//     description: "I have created multiple",
+//   },
+// ];
