@@ -4,7 +4,6 @@ import Header from "./components/sections/header/Header";
 import Contact from "./components/sections/contact/Contact";
 import Home from "./components/sections/home/Home";
 import Projects from "./components/sections/projects/Projects";
-import Qualification from "./components/sections/qualification/Qualification";
 import ScrollUp from "./components/common/scrollup/ScrollUp";
 import About from "./components/sections/about/About";
 import Skills from "./components/sections/skills/Skills";
@@ -19,7 +18,6 @@ function App() {
         <About />
         <Skills />
         <WorkExperience />
-        {/* <Qualification /> */}
         <Projects />
         <Contact />
       </main>
