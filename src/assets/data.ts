@@ -1,6 +1,5 @@
 import {
   Education,
-  Project,
   Skill,
   WorkExperienceInterface,
 } from "../components/common/interfaces";
@@ -32,8 +31,8 @@ export const projects = [
     description: "A web application that contains multiple React.js projects",
     image: "",
     tags: ["React.js"],
-    demoLink: "https://example.com",
-    codeLink: "https://github.com/example",
+    demoLink: "https://learning-react-rouge.vercel.app/",
+    codeLink: "https://github.com/ronrana24/Learning-React",
   },
 ];
 
@@ -78,19 +77,19 @@ export const skills: { [key: string]: Skill[] } = {
 export const education: Education[] = [
   {
     id: 1,
-    school: "Government Model Senior Secondary School (GMSSS)",
-    location: "Chandigarh, India",
-    grade: "Higher Secondary (11th & 12th)",
-    startDate: "Apr 2016",
-    endDate: "May 2018",
-  },
-  {
-    id: 2,
     school: "Chitkara University",
     location: "Rajpura, Punjab, India",
     grade: "B.E. in Computer Science and Engineering",
     startDate: "Jun 2018",
     endDate: "Jun 2022",
+  },
+  {
+    id: 2,
+    school: "Government Model Senior Secondary School (GMSSS)",
+    location: "Chandigarh, India",
+    grade: "Higher Secondary (11th & 12th)",
+    startDate: "Apr 2016",
+    endDate: "May 2018",
   },
 ];
 

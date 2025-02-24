@@ -24,6 +24,7 @@ export interface Skill {
 }
 
 export interface HeaderProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   className?: any;
   text: string;
 }
