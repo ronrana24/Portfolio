@@ -45,6 +45,8 @@ export interface WorkExperienceInterface {
   startDate: string;
   endDate: string;
   description?: string;
+  tasks?: string[];
+  technologies?: string[];
 }
 
 export interface ContactEmailProps {

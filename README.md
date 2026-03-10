@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio site built with **React**, **TypeScript**, and **Vite**. It showcases skills, work experience, education, projects, and a contact section with a modern, responsive UI. Uses Framer Motion for animations, React Scroll for navigation, and supports a light/dark theme.
 
-Currently, two official plugins are available:
+## What’s inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home** — Intro and quick links  
+- **About** — Short bio  
+- **Skills** — Frontend, backend, frameworks, databases, AWS, and tools  
+- **Work experience** — Timeline of roles  
+- **Projects** — Featured projects with links  
+- **Contact** — Social links and contact options  
 
-## Expanding the ESLint configuration
+## How to run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Setup and run locally
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Install dependencies**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Start the dev server**
+
+   ```bash
+   npm run dev
+   ```
+
+   The app will be at **http://localhost:5173** (or the port Vite prints in the terminal).
+
+3. **Other scripts**
+
+   | Command           | Description                    |
+   | ----------------- | ------------------------------ |
+   | `npm run build`   | Build for production           |
+   | `npm run preview` | Serve the production build     |
+   | `npm run lint`    | Run ESLint                     |
+
+## Deployment
+
+There is no deployment config committed in this repo. You can deploy the built app to any static host, for example:
+
+- **Vercel** — Connect the repo and use the default Vite build settings  
+- **Netlify** — Same idea; build command: `npm run build`, publish directory: `dist`  
+- **GitHub Pages**, **Cloudflare Pages**, or any host that serves static files from the `dist` folder  
+
+After deploying, add the live URL here, for example:
+
+**Live site:** [https://your-portfolio-domain.com](https://your-portfolio-domain.com)
+
+---
+
+Built with [Vite](https://vitejs.dev/) and [React](https://react.dev/).

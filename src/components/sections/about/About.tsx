@@ -1,6 +1,4 @@
 import "./style.css";
-// import AboutImg from "../../src/assets/about-pic.png";
-// import CV from "../../src/assets/Soumyajit's New Resume.pdf";
 import Info from "./Info";
 import Header from "../../common/heading/Header";
 import SubHeading from "../../common/sub-heading/SubHeading";
@@ -37,7 +35,7 @@ const About = () => {
               whileHover={{ color: "#ff6347" }}
               transition={{ duration: 0.3 }}
             >
-              Skilled in system design (LLD & HLD), and problem-solving{" "}
+              Skilled in system design (LLD & HLD), and problem-solving.{" "}
             </motion.span>
             My approach combines clean architecture, optimized performance, and
             best coding practices to deliver reliable and maintainable software.
