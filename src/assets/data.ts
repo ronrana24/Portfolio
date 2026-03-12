@@ -143,7 +143,7 @@ performance by 45%.`,
     company: "Chimps At Work (CAW) Studios",
     location: "Hyderabad, Telangana, India",
     startDate: "September 2023",
-    endDate: "Present",
+    endDate: "March 2025",
     tasks: [
       `Engineered a scalable, end-to-end, role-based document management microservice, leveraging MVC architecture and open source service (Paperless), enabling secure access for 100+ employees and improving operational efficiency and data security.`,
       `Designed and optimised SQL & NoSQL database schemas, reducing query execution time by 35% and improving overall data retrieval efficiency.`,
