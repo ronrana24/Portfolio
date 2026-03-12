@@ -47,7 +47,7 @@ export const skills: { [key: string]: Skill[] } = {
   backend: [
     { id: 6, name: "Node.js", level: "Advanced", icon: FaNode },
     { id: 7, name: "Python", level: "Intermediate", icon: SiPython },
-    { id: 8, name: "Go", level: "Beginner", icon: SiGo },
+    { id: 8, name: "Go", level: "Intermediate", icon: SiGo },
   ],
   framework: [
     { id: 9, name: "Express", level: "Advanced", icon: SiExpress },
@@ -113,6 +113,7 @@ export const workExperience: WorkExperienceInterface[] = [
       "Grafana",
       "Kafka",
       "React.js",
+      "Go",
     ],
     tasks: [
       "Spearheaded an automated alerting system in CUBE APM that tracked logic threshold violations and reduced developer response time by 30%, minimising system downtime.",
