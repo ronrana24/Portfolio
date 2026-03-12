@@ -34,6 +34,15 @@ export const projects = [
     demoLink: "https://learning-react-rouge.vercel.app/",
     codeLink: "https://github.com/ronrana24/Learning-React",
   },
+  {
+    id: 2,
+    title: "Portfolio",
+    description: "A web application that contains my portfolio",
+    image: "",
+    tags: ["React.js", "Tailwind CSS", "TypeScript"],
+    demoLink: "https://my-portfolio-omega-beryl-59.vercel.app/",
+    codeLink: "https://github.com/ronrana24/Portfolio",
+  },
 ];
 
 export const skills: { [key: string]: Skill[] } = {
